@@ -7,3 +7,12 @@ notifications:
     recipients:
       diego.botia@gmail.com
 jdk: oraclejdk8
+deploy:
+  
+    on:
+      branch: release
+    provider: bintray
+    skip_cleanup: true
+    file: target/bin/bintray.json
+    user: dbotia
+    key: $BINTRAY_API_KEY
