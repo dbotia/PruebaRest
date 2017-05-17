@@ -7,3 +7,4 @@ notifications:
     recipients:
       diego.botia@gmail.com
 jdk: oraclejdk8
+script: mvn clean install
